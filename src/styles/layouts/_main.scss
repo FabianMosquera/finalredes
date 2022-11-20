@@ -1,0 +1,121 @@
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #212121;
+}
+
+.content .textBox {
+  position: relative;
+}
+
+.content .textBox h2 {
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.content .textBox span {
+  color: #03a9f4;
+  font-size: 1em;
+}
+.content .textBox h3 {
+  color: rgb(190, 190, 190);
+  font-size: 2em;
+}
+
+.content .textBox h4 {
+  color: azure;
+  font-size: 1.5em;
+  margin: 0;
+  // padding-top: 15px;
+}
+
+.content .textBox p {
+  color: aquamarine;
+}
+
+.content .imgBox {
+  display: flex;
+  width: 600px;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.content .imgBox img {
+  width: 600px;
+}
+
+.content .textBox a{
+    text-decoration: none;
+}
+
+.contenedorD1 {
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(to right top, #651192, #004d7a, #D645EC);
+    display: flex;
+    border-radius: 12px;
+    margin-top: 10px;
+    border: 2px solid rgb(192, 192, 192);
+    width: 60%;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorD1:hover{
+  background: linear-gradient(to right top, #ECFDFF, #41F0D1);
+}
+
+.contenedorD1:hover h4{
+  color: #004d7a;
+  font-size: 1.6em;
+}
+
+.contenedorD1 button {
+  height: 30px;
+  width: 80px;
+  margin: 40px;
+}
+
+.contenedorD2 {
+  width: 350px;
+  height: 100px;
+  background: linear-gradient(to right top, #051937, #004d7a, #008793);
+  display: flex;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 2px solid rgb(59, 59, 59);
+  width: 60%;
+  padding: 0 20px;
+}
+
+.contenedorD2 button {
+height: 30px;
+width: 80px;
+margin: 40px;
+}
+
+.contenedorD3 {
+  width: 350px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(19,121,9,1) 35%, rgba(0,212,255,1) 100%);
+  display: flex;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 2px solid rgb(59, 59, 59);
+  width: 60%;
+  padding: 0 20px;
+}
+
+.contenedorD3 button {
+height: 30px;
+width: 80px;
+margin: 40px;
+}
+

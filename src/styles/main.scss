@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+//1.vendors
+@use 'vendors/' as *;
+//2.base stuff
+@use 'base/' as *;
+//3.layouts
+@use 'layouts/' as *;
+//4.components
+@use 'components/' as *;
+

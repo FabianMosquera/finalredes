@@ -1,0 +1,50 @@
+#modal {
+    display: grid;
+    place-items: center;
+    width: 629px;
+    height: 276px;
+    position: absolute;
+    top: 230px;
+    z-index: 9;
+    background-color: transparent;
+    transform: translate(70%, 80%);
+    padding-bottom: 2em;
+}
+
+.modal {
+    width: 628px;
+    height: 450px;
+    background: linear-gradient(90deg, #42f8a3, #03a9f4);
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+    border-radius: 12px;
+}
+
+.modal h2 {
+    color: #004d7a;
+    font-size: 40px;
+}
+
+.modal h4 {
+    font-size: 20px;
+    color: #004d7a;
+}
+
+.modal h4, .modal h5, .modal p{
+    margin: 0px 0;
+}
+
+.fecha, .valor {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.containerF {
+    margin-top: 10px;
+    border: 2px solid rgb(59, 59, 59);
+    width: 60%;
+    padding: 1em 20px;
+}

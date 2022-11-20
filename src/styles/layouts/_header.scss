@@ -1,0 +1,36 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212121;
+}
+
+h1 {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  padding-right: 40px;
+  gap: 20px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+}
