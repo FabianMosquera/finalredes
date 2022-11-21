@@ -47,7 +47,7 @@ export function Devices({ nameDevive, device, token }) {
     <>
       <div className="textBox">
         <h2>
-          Basura Inteligente<span>.</span>
+          Lizard trap<span>.</span>
         </h2>
         <h3>{nameDevive}</h3>
         <h5>Datos:</h5>

@@ -1,6 +1,7 @@
 .content {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +17,7 @@
   font-size: 4em;
   line-height: 1.4em;
   font-weight: 500;
+  margin-top: 0;
 }
 .content .textBox span {
   color: #03a9f4;
@@ -42,39 +44,43 @@
   width: 600px;
   justify-content: flex-end;
   padding-right: 50px;
-  margin-top: 50px;
 }
 
 .content .imgBox img {
   width: 600px;
 }
 
-.content .textBox a{
-    text-decoration: none;
+.content .textBox a {
+  text-decoration: none;
 }
 
 .contenedorD1 {
-    width: 350px;
-    height: 100px;
-    background: linear-gradient(to right top, #651192, #004d7a, #D645EC);
-    display: flex;
-    border-radius: 12px;
-    margin-top: 10px;
-    border: 2px solid rgb(192, 192, 192);
-    width: 60%;
-    padding: 0 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  width: 350px;
+  height: 100px;
+  background: linear-gradient(to right top, #ecfdff, #41f0d1);
+  background-color: #fff;
+  display: flex;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 2px solid rgb(192, 192, 192);
+  width: 60%;
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.contenedorD1:hover{
-  background: linear-gradient(to right top, #ECFDFF, #41F0D1);
+.contenedorD1:hover {
+  background: linear-gradient(to right top, #651192, #004d7a, #d645ec);
 }
 
-.contenedorD1:hover h4{
-  color: #004d7a;
+.contenedorD1 h4 {
+  color: #004d7a !important;
+}
+
+.contenedorD1:hover h4 {
   font-size: 1.6em;
+  color: white !important;
 }
 
 .contenedorD1 button {
@@ -96,15 +102,19 @@
 }
 
 .contenedorD2 button {
-height: 30px;
-width: 80px;
-margin: 40px;
+  height: 30px;
+  width: 80px;
+  margin: 40px;
 }
 
 .contenedorD3 {
   width: 350px;
   height: 100px;
-  background: linear-gradient(90deg, rgba(19,121,9,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(19, 121, 9, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   display: flex;
   border-radius: 12px;
   margin-top: 10px;
@@ -114,8 +124,7 @@ margin: 40px;
 }
 
 .contenedorD3 button {
-height: 30px;
-width: 80px;
-margin: 40px;
+  height: 30px;
+  width: 80px;
+  margin: 40px;
 }
-

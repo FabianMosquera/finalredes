@@ -1,4 +1,4 @@
-import image from "../assets/basuraIoT.svg";
+import image from "../assets/lizard-image.svg";
 import { Home, Devices } from "../pages";
 import { Routes, Route } from "react-router-dom";
 
