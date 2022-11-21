@@ -1,4 +1,3 @@
-
 import { Modal } from "../components";
 import { AlturaService } from "../services";
 import { CallEndpoint } from "../utils";
@@ -7,9 +6,8 @@ import { useEffect, useState } from "react";
 export function Devices({ nameDevive, device, token }) {
 
   const [ultimo, setUltimo] = useState({
-    altura: 0,
-    peso: 0,
-    gas: 0,
+    distancia: 0,
+    pulso: 0,
   });
 
   const [data, setData] = useState({});
@@ -30,14 +28,12 @@ export function Devices({ nameDevive, device, token }) {
   }
 
   async function ultimoDato() {
-    let Altura = await makeRequest(AlturaService, "Altura");
-    let Gas = await makeRequest(AlturaService, "Particulas");
-    let Peso = await makeRequest(AlturaService, "PotValor")
+    let Distancia = await makeRequest(AlturaService, "distancia");
+    let Pulso = await makeRequest(AlturaService, "pulso");
 
     setUltimo({
-      altura: Altura[0].value,
-      peso: Peso[0].value,
-      gas: Gas[0].value,
+      distancia: Distancia[0].value,
+      pulso: Pulso[0].value,
     });
   }
 
@@ -55,14 +51,11 @@ export function Devices({ nameDevive, device, token }) {
         </h2>
         <h3>{nameDevive}</h3>
         <h5>Datos:</h5>
-        <div className="contenedorD1" onClick={() => eventAltura("PotValor")}>
-          <h4>Peso: {ultimo.peso}</h4>
+        <div className="contenedorD1" onClick={() => eventAltura("pulso")}>
+          <h4>Pulso: {ultimo.pulso}</h4>
         </div>
-        <div className="contenedorD1" onClick={() => eventAltura("Altura")}>
-          <h4>Altura: {ultimo.altura}</h4>
-        </div>
-        <div className="contenedorD1" onClick={() => eventAltura("Particulas")}>
-          <h4>Gas: {ultimo.gas}</h4>
+        <div className="contenedorD1" onClick={() => eventAltura("distancia")}>
+          <h4>Distancia: {ultimo.distancia} cm</h4>
         </div>
       </div>
       {isOpen && <Modal name={name} values={info} />}
